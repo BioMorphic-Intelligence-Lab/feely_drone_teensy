@@ -27,8 +27,8 @@
 STSServoDriver servos;
 uint8_t num_servos = 3;
 byte servo_ids[] = {1, 2, 3};
-int64_t max_pos[] = {6000, 8500, 6000};
-int64_t min_pos[] = {500, 500, 500};
+int64_t max_pos[] = {6750, 9250, 6500};
+int64_t min_pos[] = {700, 3000, 1000};
 
 constexpr unsigned int TIMER_TIMEOUT = RCL_S_TO_NS(1.0 / 250.0); // 1/f_pub
 
