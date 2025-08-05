@@ -27,7 +27,12 @@
 STSServoDriver servos;
 uint8_t num_servos = 3;
 byte servo_ids[] = {1, 2, 3};
-int64_t max_pos[] = {6750, 9250, 6500};
+// The arm numbering is as follows
+//   Front aka Battery
+// ===||     1
+//    ||===  3
+// ===||     2
+int64_t max_pos[] = {6750, 9250, 8500};
 int64_t min_pos[] = {700, 3000, 1000};
 
 constexpr unsigned int TIMER_TIMEOUT = RCL_S_TO_NS(1.0 / 250.0); // 1/f_pub
