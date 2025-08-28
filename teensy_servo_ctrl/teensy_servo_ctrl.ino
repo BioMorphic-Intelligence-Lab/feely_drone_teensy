@@ -32,8 +32,8 @@ byte servo_ids[] = {1, 2, 3};
 // ===||     1
 //    ||===  3
 // ===||     2
-int64_t max_pos[] = {9750, 8750, 8000};
-int64_t min_pos[] = {3500, 3000, 2000};
+int64_t max_pos[] = {7000, 8450, 8000};
+int64_t min_pos[] = {1500, 2500, 2000};
 
 constexpr unsigned int TIMER_TIMEOUT = RCL_S_TO_NS(1.0 / 250.0); // 1/f_pub
 
